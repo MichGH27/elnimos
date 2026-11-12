@@ -1,12 +1,12 @@
 # Elnimo's Place Resort UI — index.php in the project root
 
-This ZIP is the same **UI-only Grandoria-inspired prototype**, reorganized so that `index.php` stays in the project root while all redesigned secondary PHP pages, CSS, JS, and shared PHP includes live in `landing-page/`.
+This ZIP is the same **UI-only Grandoria-inspired prototype**, reorganized so that `index.php` stays in the project root while all redesigned secondary PHP pages, CSS, JS, and shared PHP includes live in a dedicated `landing-page/` subfolder.
 
 ## Placement inside an existing XAMPP project
 
-Copy `index.php` and the entire `landing-page/` folder into `C:\xampp\htdocs\elnimos_resort\` (back up the original `index.php` first). DO NOT replace your original production booking, login, registration, reviews, or admin modules.
+Copy `index.php` and the entire `landing-page/` folder into `C:\xampp\htdocs\elnimos_resort\` (back up the original `index.php` first). DO NOT replace your original production booking, login, registration, or other app files outside the **UI folder**.
 
-```
+```text
 elnimos_resort/
     index.php
     landing-page/
@@ -37,4 +37,4 @@ Pages: `http://localhost/elnimos_resort/landing-page/about.php`, `.../landing-pa
 
 ## Scope and caveats
 
-This is **design/UI only**: there are no database connections, real bookings, payments, user accounts or live review/promo feeds. `landing-page/book.php` is an independent illustrative visit estimator; it does not replace any existing project-root `book.php`. Contact uses a mailto draft. If publishing, replace placeholder/Unsplash images with real, approved photos, and connect your chosen UI controls to your real business logic.
+This is **design/UI only**: there are no database connections, real bookings, payments, user accounts or live review/promo feeds. `landing-page/book.php` is an independent illustrative visit estimator and is not connected to a backend or a payment flow.
